@@ -1,12 +1,9 @@
 import React from "react";
 import "./Navbar.css";
-// import logo from "../../assets/logo.png";
+
 const Navbar = () => {
   return (
     <nav>
-      {/* <div className="nav-logo">
-        <img src={logo} alt="logo" />
-      </div> */}
       <div className="nav-links">
         <ul>
           <li>
@@ -16,10 +13,10 @@ const Navbar = () => {
             <a href="/">About</a>
           </li>
           <li>
-            <a href="/">Projects</a>
+            <a href="#services">Projects</a>
           </li>
           <li>
-            <a href="/">Work</a>
+            <a href="#works">Works</a>
           </li>
         </ul>
       </div>

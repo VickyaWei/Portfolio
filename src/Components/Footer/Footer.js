@@ -4,13 +4,10 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-
       {/* copyright */}
       <div className="footer-copyright">
-        <p>Created by Vicky Wei</p>
-        <p>© 2024</p>
+        <p>© 2024 Created by Vicky Wei </p>
       </div>
-
       {/* social */}
       <ul className="footer-social-media">
         <li>
@@ -28,11 +25,7 @@ const Footer = () => {
             <i className="fa-solid fa-envelope"></i>
           </a>
         </li>
-        <li>
-          <a href="https://www.instagram.com/">
-            <i className="fab fa-instagram"></i>
-          </a>
-        </li>
+
       </ul>
     </footer>
   );

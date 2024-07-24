@@ -1,16 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #000; /* Black background */
   padding: 0 20px;
-  
+  font-family: 'Roboto', sans-serif; /* Updated font */
 }
-
-/* .nav-logo img {
-  width: 90px;
-} */
 
 nav ul {
   display: flex;
@@ -18,35 +16,33 @@ nav ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 nav ul li {
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   padding-bottom: 5px;
-  /* margin-bottom: 10px; */
 }
 
 nav ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: #333;
+  color: #fff; /* White text color */
 }
 
 nav ul li:hover {
-  background-color: #fcb212;
+  background-color: #fcb212; /* Highlight color on hover */
   color: #fff;
   padding: 5px;
 }
 
-/* media query */
+/* Media query for larger screens */
 @media (min-width: 768px) {
   nav ul {
     flex-direction: row;
   }
   nav ul li {
-    padding: 10px;
-    margin-right: 50px;
+    padding: 18px;
+    margin-right: 100px;
   }
 }

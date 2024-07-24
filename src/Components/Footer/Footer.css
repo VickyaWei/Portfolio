@@ -1,28 +1,38 @@
 footer {
-  background-color: white;
-  color: black;
-  padding: 20px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px; /* Padding on all sides */
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text inside footer */
 }
 
-/* footer img {
-  width: 100px;
-} */
-
+.footer-copyright {
+  margin-bottom: 20px; /* Space between copyright and social media icons */
+}
 
 .footer-social-media {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer-social-media li {
-  color: yellow;
-  list-style: none;
-  margin: 10px;
+  list-style: none; /* Remove default list styling */
+  gap: 15px; /* Space between social media icons */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
-.footer-social-media li a {
-  text-decoration: none;
-  color: #fcb212;
+.footer-social-media li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-media a {
+  color: #fff; /* White color for icons */
+  font-size: 24px; /* Icon size */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-social-media a:hover {
+  color: #e08804; /* Color change on hover */
 }

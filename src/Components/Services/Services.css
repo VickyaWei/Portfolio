@@ -1,74 +1,85 @@
+/* Full-screen container for the entire services section */
 .services-container {
-  margin: 20px;
-  background-color: #fff;
-}
-
-.services-list-container {
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.services-item {
-  margin: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
-.services-item i {
-  font-size: 2rem;
-  margin: 10px;
-}
-
-.fa-code {
-  color: #e94c89;
-}
-
-.fa-desktop {
-  color: #fdb448;
-}
-
-.fa-tablet-alt {
-  color: #c31f0c;
-}
-
-.services-desc-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 20px;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center content vertically */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width/height calculations */
+  font-family: 'Roboto', sans-serif;
+  background-color: #000; /* Black background */
 }
 
-.services-container h1 span {
+/* Container for the heading and tiles */
+.services-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the heading and items horizontally */
+  width: 100%; /* Full width of the container */
+}
+
+/* Styling for the heading */
+.services-desc-container {
+  text-align: center; /* Center text inside the container */
+  margin-bottom: 20px; /* Space between heading and items */
+}
+
+.services-desc-container h1 {
   font-size: 2.5rem;
-  color: #fdb448;
+  color: #fff; /* White text color for better contrast on black background */
 }
 
-.services-container button {
-  background-color: #fdb448;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  width: 120px;
-  padding: 10px;
+.services-desc-container h1 span {
+  color: #e08804; /* Highlight color for "Projects" */
 }
 
-/* Media query */
-@media (min-width: 768px) {
-  .services-list-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .services-desc-container {
-    width: 40%;
-  }
+/* Container for the items (tiles) */
+.service-item-container {
+  display: flex;
+  justify-content: center; /* Center tiles horizontally */
+  gap: 20px; /* Space between tiles */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Optional: limit max-width for better readability */
+}
+
+/* Individual tile styling */
+.services-item {
+  background-color: #333; /* Dark background for tiles */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 300px; /* Set a fixed width for tiles */
+  text-align: center; /* Center text inside tiles */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.services-item img {
+  width: 100%; /* Ensure image fills the width of the container */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 8px; /* Optional: rounded corners */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.services-item h3 {
+  font-size: 1.5rem;
+  color: #fff; /* White text color for better contrast */
+  margin-bottom: 10px;
+}
+
+.services-item p {
+  font-size: 1rem;
+  color: #ddd; /* Light grey text color for readability */
+  text-align: left; /* Align paragraph text to the left */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
   .service-item-container {
-    width: 60%;
-  }
-  .services-item {
-    width: 80%;
+    flex-direction: column; /* Stack tiles vertically on small screens */
+    align-items: center;
   }
 }
